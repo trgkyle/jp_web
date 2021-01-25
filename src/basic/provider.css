@@ -1,0 +1,70 @@
+@import url("./basic.css");
+.providerview {
+  height: 400px;
+  background: #eee;
+  box-shadow: 5px 5px 10px #666;
+  border-radius: 10px;
+}
+
+table td:first-child {
+  text-align: center;
+}
+.providerview {
+  overflow: hidden;
+}
+.providerview .title {
+  line-height: 3rem;
+  background: #555;
+  color: #fff;
+  font-weight: 600;
+}
+.providerview form {
+}
+.providerview input:focus,
+button {
+  border: 1px solid #88f;
+  border-radius: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.providerview input,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+.providerview .lc {
+  text-align: right;
+  font-weight: 700;
+}
+.providerview .btnLogin {
+  background: #aaa;
+  cursor: pointer;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .providerview label {
+    text-align: left !important;
+    font-weight: 600;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .providerview label {
+    text-align: left !important;
+    font-weight: 600;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}

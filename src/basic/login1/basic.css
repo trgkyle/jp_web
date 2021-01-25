@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+@import "./bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css";
+@import url("./fontawesome-free-5.15.1-web/css/all.css");
+a {
+    text-decoration: none;
+}
+a:hover {
+    font-weight: 700;
+}
+table {
+    width: 100%;
+}
+table th, table td {
+    padding: 10px 12px;
+}

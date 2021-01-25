@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./provider.css">
+    <script lang="javascript" src="./ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <div class="container-md">
+        <form name="frmLogin" action="">
+            <div class="providerview h-auto">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title text-center">Provider</div>
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label for="txtName" class="col-md-2 col-form-label text-right">Provider name</label>
+                    <div class="col-md-4">
+                        <input type="text" id="txtName" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label class="col-md-2 text-right col-form-label" for="txtImage">Provider image</label>
+                    <div class="col-md-10">
+                        <input type="file" id="txtImage" class="form-control-file">
+                    </div>
+                </div>
+                <div class="form-group row m-3 align-items-center">
+                    <label class="col-md-2 text-right form-control-label" for="txtNote">Provider notes</label>
+                    <div class="col-md-10">
+                        <textarea name="" id="txtNote" cols="83" rows="8"></textarea>
+                    </div>
+                </div>
+                <script lang="javascript">
+                    var editor = CKEDITOR.replace('txtNote');
+                </script>
+                <div class="form-group">
+                    <div class="offset-md-4 col-md-6 m-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="isSave">
+                            <label class="text-left form-check-label" for="isSave">Do you agree with the rules of provider</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row p-3">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-sign-in-alt"></i>
+                            Submit</button>
+                        <button class="btn btn-primary" type="button">Exit <i class="fas fa-sign-out-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

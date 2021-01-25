@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./user.css">
+    <script lang="javascript" src="./ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <div class="container-md">
+        <form name="frmLogin" action="">
+            <div class="providerview h-auto">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title text-center">ACCOUNT INFORMATION</div>
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label for="txtName" class="col-md-2 col-form-label text-right">Username</label>
+                    <div class="col-md-4">
+                        <input type="text" id="txtName" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label class="col-md-2 text-right col-form-label" for="txtImage">Password</label>
+                    <div class="col-md-4">
+                        <input type="password" id="txtImage" class="form-control-file">
+                    </div>
+                    <label class="col-md-2 text-right col-form-label" for="txtImage">Confirm password</label>
+                    <div class="col-md-4">
+                        <input type="password" id="txtImage" class="form-control-file">
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Email</label>
+                    <div class="col-md-4">
+                        <input type="text" id="txtEmail" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Permission</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option checked>--Select--</option>
+                            <option value="0">Members</option>
+                            <option value="1">Authors</option>
+                            <option value="2">Managers</option>
+                            <option value="3">Administrators</option>
+                            <option value="4">Super Administrators</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row m-3 align-items-center">
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Roles</label>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        User management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Section management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categories management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Article management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Product System management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Product Group management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categories management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categories management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categories management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categories management
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <form name="frmLogin" action="">
+            <div class="providerview h-auto">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title text-center">DETAIL INFORMATION</div>
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label for="txtName" class="col-md-2 col-form-label text-right">Fullname</label>
+                    <div class="col-md-4">
+                        <input type="text" id="txtName" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label class="col-md-2 text-right col-form-label" for="txtImage">Alias</label>
+                    <div class="col-md-4">
+                        <input type="password" id="txtImage" class="form-control-file">
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label class="col-md-2 text-right col-form-label" for="txtImage">Birthday</label>
+                    <div class="col-md-4">
+                        <input type="date" id="txtImage" class="form-control-file">
+                    </div>
+                </div>
+                <div class="form-group row m-3">
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Gender</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option checked>--Select--</option>
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Address</label>
+                    <div class="col-md-6">
+                        <input type="text" id="txtEmail" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row m-3">
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Home Phone</label>
+                    <div class="col-md-2"><input type="text" id="txtImage" class="form-control-file"></div>
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Office Phone</label>
+                    <div class="col-md-2"><input type="text" id="txtImage" class="form-control-file"></div>
+                    <label for="txtEmail" class="col-md-2 col-form-label text-right">Mobile Phone</label>
+                    <div class="col-md-2"><input type="text" id="txtImage" class="form-control-file"></div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-md-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.4556912348953!2d105.73295331519678!3d21.054454392275943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2sHanoi%20University%20of%20Industry!5e0!3m2!1sen!2s!4v1611142560235!5m2!1sen!2s"
+                            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
