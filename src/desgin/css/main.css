@@ -1,33 +1,104 @@
-﻿
-@import url("./basic.css");
-*{margin: 0; padding: 0;}
+﻿@import url("./basic.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+.header {
+  background: rgba(50, 50, 50, 0.5);
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .top {
+  padding: 10px 0;
+}
+.header .menu .nav-item .nav-link {
+  color: #fff;
+}
 
-body{
-	font-size: 16px;
+.card {
+  margin: 2rem;
+}
+/* Slider */
+.mybg1 {
+  background: rgba(50, 50, 50, 0.5);
+}
+/* Focus new */
+.crop-img1 {
+  max-height: 260px;
+  overflow: hidden;
+}
+
+/* sections */
+.mycrop2 {
+  width: 250px;
+  height: 180px;
+  overflow: hidden;
+}
+.mycrop2 img {
+  width: 100%;
+}
+.crop-img1 img {
+  /* -webkit-transform: scale(
+    0.8
+  ); Webkit: Scale down image to 0.8x original size */
+  /* -moz-transform: scale(0.8); Mozilla scale version*/
+  /* -o-transform: scale(0.8); Opera scale version */
+  -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+  -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+  -o-transition-duration: 0.5s; /*Opera duration version*/
+  /* opacity: 0.7; initial opacity of images */
+  margin: 0 10px 5px 0; /*margin between images*/
+}
+.crop-img1 img:hover {
+  -webkit-transform: scale(
+    1.1
+  ); /*Webkit: Scale up image to 1.2x original size*/
+  -moz-transform: scale(1.1); /*Mozilla scale version*/
+  -o-transform: scale(1.1); /*Opera scale version*/
+  box-shadow: 0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+  -webkit-box-shadow: 0px 0px 30px gray; /*Safari shadow version*/
+  -moz-box-shadow: 0px 0px 30px gray; /*Mozilla shadow version*/
+  opacity: 1;
+}
+
+body {
+  font-size: 16px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	
+  .top {
+    display: none;
+  }
+  .navbar-togger {
+    background: rgba(255,255,0.5) !important;
+  }
+  .focus-new h2 {
+    font-size: 25px;
+  }
+  .mycrop2 {
+    width: 40vw;
+    max-height: 20vh;
+  }
+  .media-body h5 {
+    font-size: 18px !important;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-	
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-	
 }
-
