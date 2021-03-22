@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./provider.css">
     <script lang="javascript" src="./ckeditor/ckeditor.js"></script>
+    <script src="./provider.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,9 @@
                     <label for="txtName" class="col-md-2 col-form-label text-right">Provider name</label>
                     <div class="col-md-4">
                         <input type="text" id="txtName" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <div id="viewErrorName"></div>
                     </div>
                 </div>
                 <div class="form-group row m-3">
@@ -42,15 +46,15 @@
                 <div class="form-group">
                     <div class="offset-md-4 col-md-6 m-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="isSave">
+                            <input class="form-check-input" type="checkbox" onclick="checkValidProvider(this.form)" id="chkAgree">
                             <label class="text-left form-check-label" for="isSave">Do you agree with the rules of provider</label>
                         </div>
                     </div>
                 </div>
                 <div class="form-group row p-3">
                     <div class="col-md-12 text-center">
-                        <button class="btn btn-primary" type="submit"><i class="fas fa-sign-in-alt"></i>
-                            Submit</button>
+                        <button class="btn btn-primary" id="btnReg" type="submit"><i class="fas fa-sign-in-alt"></i>
+                            Register</button>
                         <button class="btn btn-primary" type="button">Exit <i class="fas fa-sign-out-alt"></i></button>
                     </div>
                 </div>

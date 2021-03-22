@@ -13,10 +13,10 @@
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="./js/main.js"></script>
 </head>
 
-<body>
+<body onload="setFirstTime(window.document.frmSearch)">
     <!-- HEADER -->
     <div>
         <div class="header fixed-top">
@@ -82,10 +82,9 @@
                                     <a class="nav-link" href="#">Liên hệ</a>
                                 </li>
                             </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <form class="form-inline my-2 my-lg-0" name="frmSearch">
+                                <input class="form-control mr-sm-2" type="text" name="txtKeyword" aria-label="Search" onclick="setKeyword(this.form,true)" onblur="setKeyword(this.form, false)">
+                                <button class="btn btn-outline-success my-2 my-sm-0" onclick="checkValidKeyword(this.form)" type="button">Tìm kiếm</button>
                             </form>
                         </div>
                     </nav>
