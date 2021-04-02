@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 function checkValidProvider(fn) {
   var name = document.getElementById("txtName").value;
   var check = document.getElementById("chkAgree").checked;
